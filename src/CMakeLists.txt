@@ -9,6 +9,8 @@ add_library(testLib "")
 add_executable(indprolog main.cpp)
 add_library(lib "")
 
+install(TARGETS indprolog lib)
+
 target_include_directories(indprolog PRIVATE ./)
 target_include_directories(lib PRIVATE ./)
 target_include_directories(testLib PRIVATE ./)
